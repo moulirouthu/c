@@ -1,0 +1,16 @@
+int arrangeCoins(int n)
+{
+    int k=1;
+    while(n>=k)
+    {
+        n-=k++;
+    }
+ return k-1;
+}
+
+output
+n=5
+2
+output
+n=8
+3
