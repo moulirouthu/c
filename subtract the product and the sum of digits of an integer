@@ -1,0 +1,23 @@
+int subtractProductAndSum(int n)
+{
+   
+     int r,sum=0,product=1,result=0;       
+    while(n>0)
+        {
+            r=n%10;
+            sum=sum+r;
+            product=product*r;
+            n=n/10;
+        }
+          result=product-sum;
+           return result;
+}
+
+    
+
+output
+n=234
+15
+output
+n=4421
+21
