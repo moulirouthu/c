@@ -1,0 +1,42 @@
+#include<stdio.h>
+void main()
+{
+    int a[100][100],r,r1,c,i,j,sum=0;
+    printf("enter how many rows:");
+    scanf("%d",&r);
+    printf("\nenter how many columns:");
+    scanf("%d",&c);
+    printf("\nenter elements of array:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    //row sum
+     printf("\nenter the row:");
+        scanf("%d",&r1);
+         for(i=r1-1;i<r;i++)
+        {
+        for(j=0;j<c;j++)
+        {
+            sum=sum+a[r1-1][j];
+        }
+            printf("%d row sum = %d \n",r1,sum);
+       break;
+        }
+    }
+
+
+Output
+
+enter how many rows:4
+enter how many columns:4
+enter elements of array:
+1 2 3 4
+8 4 5 7
+4 6 7 5
+2 7 5 1
+enter the row:4
+4 row sum = 15
