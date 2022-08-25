@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main() {
+   char str[20];
+   int i;
+   printf("string\n");
+   gets(str);
+   for(i=0;str[i]!='\0';i++)
+   {
+       if(i%2==1)
+       {
+         str[i]=str[i]-32;
+       }
+   }
+   puts(str);
+
+    return 0;
+}
+
+
+output
+
+string
+aditya
+aDiTyA
